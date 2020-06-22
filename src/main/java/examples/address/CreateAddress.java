@@ -24,7 +24,7 @@ public class CreateAddress {
         CreateAddressRequest request = new CreateAddressRequest();
         
         request.setLine1("10880, Malibu Point, Malibu Central");
-        request.setLine2("7º floor");
+        request.setLine2("7 floor");
         request.setZipCode("90265");
         request.setCity("Malibu");
         request.setState("CA");

@@ -14,6 +14,24 @@
 
   <name>MundiAPILib</name>
 
+  <scm>
+    <connection>scm:git:https://github.com/belezanaweb/MundiAPI-JAVA.git</connection>
+    <url>scm:git:git@github.com:belezanaweb/MundiAPI-JAVA.git</url>
+    <developerConnection>scm:git:git@github.com:belezanaweb/MundiAPI-JAVA.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>belezanaweb</id>
+      <name>Beleza na web repo</name>
+      <url>http://repo.blzlocal.com.br/content/groups/public/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
   <build>
     <pluginManagement>
       <plugins>
@@ -66,6 +84,20 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -141,4 +173,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>belezanaweb</id>
+      <name>libs-releases</name>
+      <url>http://repo.blzlocal.com.br/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>belezanaweb</id>
+      <name>libs-snapshots</name>
+      <url>http://repo.blzlocal.com.br/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
 </project>

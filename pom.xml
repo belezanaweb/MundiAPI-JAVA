@@ -102,13 +102,6 @@
     </plugins>
   </build>
 
-  <repositories>
-    <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </repository>
-  </repositories>
-
   <properties>
     <jackson.version>2.11.0</jackson.version>
     <maven.compiler.source>1.7</maven.compiler.source>
